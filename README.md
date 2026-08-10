@@ -29,20 +29,22 @@ The mobile web interface supports advanced multi-touch gestures:
 •	Network: The PC and mobile device must be connected to the same local area network (LAN). 
 
 ## Installation
-Run the Setup.exe file to install dependencies.
-Please refer to the SETUP_README.md file for detailed instructions on how to install the necessary dependencies (Flask, flask-socketio, eventlet) using the included automated setup utility.
+Run the setup.py file through terminal/cmd opened in the Code directory. Then run the following commands:
+"python Setup.py"
+
 
 ## Usage
-Run the remote_mouse3.exe file. 
-OR,
-1.	Start the Server:
-Bash
-python remote_mouse3.py
+Run the Remote_Mouse.py file through terminal opened in the Code directory, by running the following command:
+"python Remote_Mouse.py"
+This starts the server on the local host machine at port 5000. The address of this server would be <device ip>:5000. (Example: 192.168.0.101:5000)
+
+
 2.	Connect:
 o	Upon starting, the terminal will clear and display the Remote Mouse Server Pro header. 
 o	It will output a local URL operating on port 5000 (e.g., [http://192.168.1.](http://192.168.1.)X:5000). 
-o	Open this URL in your mobile device's web browser. 
-3.	Interface Options:
+o	Open this URL in your mobile device's web browser.
+
+4.	Interface Options:
 o	Use the Sync button to force a reconnection if the connection drops. 
 o	Use the Keyboard button to trigger the mobile device's native on-screen keyboard. 
 o	Use the FS button to toggle full screen mode for a native app experience.
